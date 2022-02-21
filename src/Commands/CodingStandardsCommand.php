@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace SilverBulletAuto\CodingStandards\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class CodingStandardsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'silverbullet-coding-standards';
 
     public $description = 'My command';
 
