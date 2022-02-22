@@ -15,12 +15,8 @@ class CodingStandardsServiceProvider extends PackageServiceProvider
          *
          * More-info: https://github.com/spatie/laravel-package-tools
          */
-//        $package
-//            ->name('silverbullet-coding-standards')
-//            ->hasConfigFile()
-//            ->hasViews()
-//            ->hasMigration('create_silverbullet-coding-standards_table')
-//            ->hasCommand(CodingStandardsCommand::class);
+        $package
+            ->name('silverbullet-coding-standards');
     }
 
     public function boot()
