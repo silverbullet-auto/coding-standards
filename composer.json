@@ -34,14 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SilverBulletAuto\\CodingStandards\\": "src",
-            "SilverBulletAuto\\CodingStandards\\Database\\Factories\\": "database/factories"
+            "SilverBulletAuto\\CodingStandards\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SilverBulletAuto\\CodingStandards\\": "src",
-            "SilverBulletAuto\\CodingStandards\\Tests\\": "tests"
+            "SilverBulletAuto\\CodingStandards\\": "src"
         }
     },
     "scripts": {
