@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="SilverBullet Standards">
+
+    <description>The SilverBullet Coding Standards for phpcs</description>
+
+    <rule ref="phpcs-laravel"/>
+    <rule ref="ImportDetection.Imports.RequireImports">
+        <properties>
+            <property name="ignoreUnimportedSymbols" value="/^\w+$/"/>
+        </properties>
+    </rule>
+
+    <file>app</file>
+    <file>bootstrap</file>
+    <file>config</file>
+    <file>database</file>
+    <file>public</file>
+    <file>resources</file>
+    <file>routes</file>
+    <file>tests</file>
+
+    <exclude-patterns>*/webpack.mix.js</exclude-patterns>
+</ruleset>
