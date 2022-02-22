@@ -1,18 +1,14 @@
-includes:
-    - ../vendor/nunomaduro/larastan/extension.neon
-    - ../phpstan-baseline.neon
 parameters:
-
     paths:
-        - ../app
-        - ../bootstrap
-        - ../config
-        - ../database
-        - ../resources
-        - ../routes
-        - ../tests
+        - ./app
+        - ./bootstrap
+        - ./config
+        - ./database
+        - ./resources
+        - ./routes
+        - ./tests
 
-    # The level 8 is the highest level
-    level: 8
+    # The level 9 is the highest level
+    level: 5
 
-    checkMissingIterableValueType: true
+    checkMissingIterableValueType: false

@@ -1,9 +1,8 @@
 <?php
 
-require __DIR__.'/vendor/autoload.php';
-require __DIR__.'/bootstrap/app.php';
+require __DIR__ . '/vendor/autoload.php';
 
-return (new MattAllan\LaravelCodeStyle\Config())
+return (new Jubeki\LaravelCodeStyle\Config())
     ->setFinder(
         PhpCsFixer\Finder::create()
             ->in(app_path())
