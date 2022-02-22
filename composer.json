@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^8.0",
+        "spatie/laravel-package-tools": "^1.9.2",
         "jubeki/laravel-code-style": "^1.0",
         "nunomaduro/larastan": "^1.0",
         "pestphp/pest": "^1.21",
