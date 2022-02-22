@@ -31,7 +31,7 @@ class CodingStandardsServiceProvider extends PackageServiceProvider
 
         // Publish Code Enforcement GitHub workflows
         $this->publishes([
-            __DIR__ . '/../tools/github-workflows/check_style.yml' => base_path('.github/workflows/check_style.yml'),
+            __DIR__ . '/../tools/github-workflows/check_style.yml' => base_path('.github/workflows/code-standards/check_style.yml'),
         ], 'github-workflows');
     }
 }
