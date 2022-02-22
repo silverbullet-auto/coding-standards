@@ -22,7 +22,8 @@ jobs:
         run: composer install
       - name: Run php-cs-fixer
         run: ./vendor/bin/php-cs-fixer fix --dry-run -v
-      - name: Run Test Suite
-        run: ./vendor/bin/phpunit
       - name: Run PhpStan
         run: ./vendor/bin/phpstan analyse
+      - name: Run Test Suite
+        run: ./vendor/bin/phpunit
+
