@@ -25,7 +25,6 @@ class CodingStandardsServiceProvider extends PackageServiceProvider
         $this->publishes([
             __DIR__ . '/../tools/coding-standard-tools/.php-cs-fixer.dist.php' => base_path('.php-cs-fixer.dist.php'),
             __DIR__ . '/../tools/coding-standard-tools/phpstan.neon.dist' => base_path('phpstan.neon.dist'),
-            __DIR__ . '/../tools/coding-standard-tools/phpcs.xml' => base_path('phpcs.xml'),
             __DIR__ . '/../tools/coding-standard-tools/phpunit.xml.dist' => base_path('phpunit.xml.dist'),
         ], 'coding-standards');
 
