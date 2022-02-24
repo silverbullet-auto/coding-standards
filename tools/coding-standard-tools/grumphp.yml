@@ -27,7 +27,7 @@ grumphp:
     phpcsfixer2:
       config: .php-cs-fixer.dist.php
       metadata:
-        priority: 3
+        priority: 2
     phpstan:
       configuration: phpstan.neon.dist
       metadata:
