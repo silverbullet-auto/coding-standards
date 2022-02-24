@@ -10,6 +10,9 @@ parameters:
         - ./routes
         - ./tests
 
+    excludePaths:
+        - ./public
+
     # The level 9 is the highest level
     level: 5
 
