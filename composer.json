@@ -1,12 +1,12 @@
 {
-    "name": "silverbullet-auto/silverbullet-coding-standards",
-    "description": "SilverBullet Coding Standards",
+    "name": "keyloop-platform/ksb-coding-standards",
+    "description": "Keyloop Coding Standards",
     "keywords": [
-        "silverbullet-auto",
+        "keyloop-platform",
         "laravel",
-        "silverbullet-coding-standards"
+        "ksb-coding-standards"
     ],
-    "homepage": "https://github.com/silverbullet-auto/silverbullet-coding-standards",
+    "homepage": "https://github.com/keyloop-platform/ksb-coding-standards",
     "license": "MIT",
     "authors": [
         {
