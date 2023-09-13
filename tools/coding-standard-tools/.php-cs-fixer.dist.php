@@ -17,8 +17,5 @@ return (new Jubeki\LaravelCodeStyle\Config())
             ->in(base_path('tests'))
     )
     ->setRules([
-        '@Laravel' => true,
-        '@Laravel:risky' => true,
-        'line_ending' => false,
     ])
     ->setRiskyAllowed(true);
