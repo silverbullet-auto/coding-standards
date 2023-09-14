@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.3/phpunit.xsd" 
-    cacheDirectory=".phpunit.cache"
-
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
     backupGlobals="false"
-    backupStaticProperties="false"
+    backupStaticAttributes="false"
     bootstrap="vendor/autoload.php"
-    colors="true" 
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
     processIsolation="false"
     stopOnFailure="false"
     executionOrder="random"
@@ -14,22 +16,24 @@
     failOnRisky="true"
     failOnEmptyTestSuite="true"
     beStrictAboutOutputDuringTests="true"
-
-    >
-  <testsuites>
-    <testsuite name="KSB platform Test Suite">
-          <directory>tests</directory>
-      </testsuite>
-    <testsuite name="Unit">
-      <directory suffix="Test.php">./tests/Unit</directory>
-    </testsuite>
-    <testsuite name="Feature">
-      <directory suffix="Test.php">./tests/Feature</directory>
-    </testsuite>
-  </testsuites>
-  <coverage/>
+    verbose="true"
+>
+    <testsuites>
+        <testsuite name="SilverBulletAuto Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">./src</directory>
+        </include>
+        <report>
+            <html outputDirectory="build/coverage"/>
+            <text outputFile="build/coverage.txt"/>
+            <clover outputFile="build/logs/clover.xml"/>
+        </report>
+    </coverage>
     <logging>
         <junit outputFile="build/report.junit.xml"/>
     </logging>
- 
 </phpunit>
